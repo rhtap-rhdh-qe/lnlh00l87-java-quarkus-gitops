@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lnlh00l87-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lnlh00l87-java-quarkus 
+  name: lnlh00l87-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: lnlh00l87-java-quarkus 
